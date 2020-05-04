@@ -1,0 +1,23 @@
+{
+  "name": "pagina-web",
+  "description": "Personal website",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarmeloAlcCoy/CarmeloAlcCoy.github.io.git"
+  },
+  "keywords": [],
+  "author": "Carmelo Alcaraz Coy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarmeloAlcCoy/CarmeloAlcCoy.github.io/issues"
+  },
+  "homepage": "https://github.com/CarmeloAlcCoy/CarmeloAlcCoy.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

@@ -1,1 +1,3 @@
 *.yml
+Dockerfile
+node_modules
