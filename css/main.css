@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i);
+
+.jumbotron{
+  margin-top: 1.5em;
+  background-color: #343a40 !important;
+}
+
+.author-name {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #232;
+}
+
+.author-desc {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.75rem;
+  color: #cdcdcd;
+}
+
+.author-img {
+  height: 50rem;
+}
