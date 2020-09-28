@@ -229,6 +229,7 @@ a:active {
 
   ul.timeline > li > .timeline-panel {
       float: right;
+      margin-right: 10px;
   }
 
   ul.timeline > li > .timeline-panel:before {
