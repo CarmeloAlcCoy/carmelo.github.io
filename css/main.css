@@ -169,7 +169,7 @@ a:active {
   top: 16px;
   left: 50%;
   margin-left: -25px;
-  background-color: #999999;
+  background-color:#922e49;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -196,24 +196,9 @@ a:active {
 }
 
 .timeline-badge.primary {
-    background-color: #2e6da4 !important;
+    background-color: #f4f25c  !important;
 }
 
-.timeline-badge.success {
-    background-color: #3f903f !important;
-}
-
-.timeline-badge.warning {
-    background-color: #f0ad4e !important;
-}
-
-.timeline-badge.danger {
-    background-color: #d9534f !important;
-}
-
-.timeline-badge.info {
-    background-color: #5bc0de !important;
-}
 
 
 @media (max-width: 767px) {
