@@ -169,7 +169,7 @@ a:active {
   top: 16px;
   left: 50%;
   margin-left: -25px;
-  background-color:#922e49;
+  background-color:#def0f3;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -196,7 +196,7 @@ a:active {
 }
 
 .timeline-badge.primary {
-    background-color: #f4f25c  !important;
+    background-color: #dee0f3  !important;
 }
 
 
@@ -287,5 +287,43 @@ a:active {
   width: inherit;
   color: #343a40 !important;
   text-align: center;
+}
+
+.ng-binding {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.skill{
+  padding: 30px 15px 30px 10px;
+}
+
+.skill-header{
+  text-align: center;
+}
+ 
+.stepper .cell.active {
+  background-color: #017df5;
+}
+
+.stepper .cell.first {
+  border-top-left-radius: 16.00001px;
+  border-bottom-left-radius: 16.00001px;
+}
+
+.stepper .cell.last {
+  border-top-right-radius: 16.00001px;
+  border-bottom-right-radius: 16.00001px;
+}
+
+.stepper .cell {
+  background-color: #d8d5d0;
+  height: 16.00001px;
+  line-height: 16.00001px;
+  border-right: 3px solid #fff;
+  margin: 2.99999px 0 0;
+  text-align: center;
+  font-size: .8em;
+  color: #fff;
 }
 
