@@ -7,6 +7,10 @@
   background-color: #343a40 !important;
 }
 
+.icon-language{
+  display: inline;
+}
+
 .author-name {
   font-family: 'Signika Negative', sans-serif;
   font-size: 4rem;
