@@ -42,16 +42,17 @@
   font-size: 1.8rem;
 }
 
+.sec-title {
+  padding-top: 3rem !important;
+}
+
 .sec-dark {
   background-color: #eeeeee !important;
-  padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
 
 .sec-light {
   background-color: #f9f9f9 !important;
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
 }
 
 p {
@@ -200,7 +201,6 @@ a:active {
 }
 
 
-
 @media (max-width: 767px) {
   ul.timeline:before {
       left: 40px;
@@ -326,4 +326,36 @@ a:active {
   font-size: .8em;
   color: #fff;
 }
+
+.collapsemodule {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.collapsemodule #collapseTimeline.collapse:not(.show) {
+  display: block;
+  overflow: hidden;
+}
+
+.collapsemodule #collapseTimeline.collapsing {
+  
+}
+
+.collapsebutton {
+  justify-content: center;
+  display: flex;
+  color: #6c757d !important;
+  padding-top: 1rem ;
+  padding-bottom: 1rem ;
+}
+
+.collapsebutton.collapsed::after {
+  content: 'Mostrar Más...';
+}
+
+.collapsebutton:not(.collapsed)::after {
+  content: 'Mostrar Menos...';
+}
+
+
 
