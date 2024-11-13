@@ -2,5 +2,6 @@
     // General settings
     "files.eol": "\n",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.rulers": [120],
     "editor.formatOnSave": true
 }
