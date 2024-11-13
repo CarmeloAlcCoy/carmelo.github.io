@@ -1,0 +1,25 @@
+{
+    "name": "website",
+    "description": "Personal website",
+    "version": "1.0.0",
+    "main": "index.html",
+    "scripts": {
+        "start": "wds --node-resolve --open --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CarmeloAlcCoy/CarmeloCoy.github.io.git"
+    },
+    "keywords": [],
+    "author": "Carmelo Alcaraz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CarmeloAlcCoy/CarmeloCoy.github.io/issues"
+    },
+    "homepage": "https://github.com/CarmeloAlcCoy/CarmeloCoy.github.io#readme",
+    "devDependencies": {
+        "@web/dev-server": "^0.4.6",
+        "prettier": "3.3.3"
+    }
+}
