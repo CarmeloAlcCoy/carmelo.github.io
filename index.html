@@ -249,14 +249,10 @@
                         </ul>
                     </div>
                 </div>
-                <a
-                    role="button"
-                    class="collapsebutton"
-                    data-toggle="collapse"
-                    href="#collapseTimeline"
-                    aria-expanded="false"
-                    aria-controls="collapseTimeline"
-                ></a>
+                <button id="show-more-button" class="collapsebutton" onclick="timelineShowMore()">Show more...</button>
+                <button id="show-less-button" style="display: none" class="collapsebutton" onclick="timelineShowLess()">
+                    Show less...
+                </button>
             </div>
         </section>
         <section id="habilidades" class="sec-dark">

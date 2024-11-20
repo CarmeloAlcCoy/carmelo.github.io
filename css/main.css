@@ -492,11 +492,3 @@ section {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
-.collapsebutton.collapsed::after {
-    content: 'Mostrar Más...';
-}
-
-.collapsebutton:not(.collapsed)::after {
-    content: 'Mostrar Menos...';
-}

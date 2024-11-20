@@ -9,24 +9,32 @@ function toogleNavbar() {
     }
 }
 
-// $('#collapseTimeline').on('show.bs.collapse', function () {
-//     var element
-//     var element2
-//     element = document.getElementById('timeline-long')
-//     element.style.display = ''
-//     element2 = document.getElementById('timeline-short')
-//     element2.style.display = 'none'
-//     //console.log('Juan');
-// })
+function timelineShowMore() {
+    let element
+    const showElements = ['timeline-long', 'show-less-button']
+    for (let name of showElements) {
+        element = document.getElementById(name)
+        element.style.display = ''
+    }
+    const hideElements = ['timeline-short', 'show-more-button']
+    for (let name of hideElements) {
+        element = document.getElementById(name)
+        element.style.display = 'none'
+    }
+    document.getElementById('experiencia').scrollIntoView({ behavior: 'smooth', inline: 'nearest' })
+}
 
-// $('#collapseTimeline').on('hide.bs.collapse', function () {
-//     var element
-//     var element2
-//     element = document.getElementById('timeline-short')
-//     element.style.display = ''
-//     element2 = document.getElementById('timeline-long')
-//     element2.style.display = 'none'
-//     //console.log('Juann');
-// })
-
-// $('#collapseTimeline').collapse('hide')
+function timelineShowLess() {
+    let element
+    const showElements = ['timeline-short', 'show-more-button']
+    for (let name of showElements) {
+        element = document.getElementById(name)
+        element.style.display = ''
+    }
+    const hideElements = ['timeline-long', 'show-less-button']
+    for (let name of hideElements) {
+        element = document.getElementById(name)
+        element.style.display = 'none'
+    }
+    document.getElementById('experiencia').scrollIntoView({ behavior: 'smooth', inline: 'nearest' })
+}

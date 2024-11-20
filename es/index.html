@@ -69,6 +69,7 @@
 
         <section id="experiencia" class="sec-light">
             <h1 class="title-section">EXPERIENCIA</h1>
+            <div class="container collapsemodule">
                 <div class="row justify-content-md-center">
                     <div class="collapse" id="collapseTimeline">
                         <ul class="timeline" id="timeline-long">
@@ -248,14 +249,12 @@
                         </ul>
                     </div>
                 </div>
-                <a
-                    role="button"
-                    class="collapsebutton"
-                    data-toggle="collapse"
-                    href="#collapseTimeline"
-                    aria-expanded="false"
-                    aria-controls="collapseTimeline"
-                ></a>
+                <button id="show-more-button" class="collapsebutton" onclick="timelineShowMore()">
+                    Mostrar más...
+                </button>
+                <button id="show-less-button" style="display: none" class="collapsebutton" onclick="timelineShowLess()">
+                    Mostrar menos...
+                </button>
             </div>
         </section>
         <section id="habilidades" class="sec-dark">
