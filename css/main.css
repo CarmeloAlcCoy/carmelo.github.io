@@ -274,7 +274,7 @@ section {
 }
 
 .timeline > li > .timeline-panel {
-    width: 43%;
+    width: 42%;
     float: left;
     border: 1px solid #d4d4d4;
     border-radius: 8px;
@@ -355,7 +355,7 @@ section {
     }
 
     ul.timeline > li > .timeline-panel {
-        width: calc(100% - 90px);
+        width: calc(100% - 130px);
         width: -moz-calc(100% - 90px);
         width: -webkit-calc(100% - 90px);
     }
