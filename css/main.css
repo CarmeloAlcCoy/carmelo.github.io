@@ -1,14 +1,189 @@
 @import url(https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i);
 
-.jumbotron {
-    margin-top: 1.5em;
-    margin-bottom: 0em !important;
+/* ************************* GLOBAL ************************* */
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin: 0;
+}
+
+a {
+    color: #09092f;
+    outline: none;
+}
+
+a:link {
+    text-decoration: #fff;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2b2b4f;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+p {
+    color: #444a40;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ************************* NAVBAR ************************* */
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-flow: row nowrap !important;
+        justify-content: flex-start;
+    }
+}
+
+.navbar {
     background-color: #343a40 !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+@media (min-width: 768px) {
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto !important;
+    }
+}
+
+.navbar-collapse {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.navbar-collapse:not(.show) {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto !important;
+    padding-left: 0;
+}
+
+@media (min-width: 768px) {
+    .nav-link {
+        padding: 0.5rem 0.5rem !important;
+    }
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    padding: 0.25rem;
 }
 
 .icon-language {
     display: inline;
+}
+
+/* ************************* Sections ************************* */
+
+.title-section {
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.sec-dark {
+    background-color: #eeeeee !important;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.sec-light {
+    background-color: #f9f9f9 !important;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* ************************* Section Home ************************* */
+
+.home {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.author {
+    align-content: center;
 }
 
 .author-name {
@@ -16,6 +191,9 @@
     font-size: 4rem;
     font-weight: bold;
     color: #232;
+    max-width: 450px;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .author-desc1 {
@@ -32,58 +210,26 @@
 }
 
 .author-img {
-    height: 50rem;
+    max-height: 750px;
+    max-width: 325px;
+    padding: 1rem;
 }
 
-.title {
-    font-family: 'Signika Negative', sans-serif;
-    text-align: center;
+/* ************************* Section About Me ************************* */
+
+.body-about {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-left: 15px;
+    align-items: center;
 }
 
-.title-footer {
-    font-family: 'Signika Negative', sans-serif;
-    text-align: center;
-    font-size: 1.8rem;
+.body-about > p {
+    max-width: 66%;
 }
 
-.sec-title {
-    padding-top: 3rem !important;
-}
-
-.sec-dark {
-    background-color: #eeeeee !important;
-    padding-bottom: 3rem !important;
-}
-
-.sec-light {
-    background-color: #f9f9f9 !important;
-}
-
-p {
-    color: #444a40;
-}
-
-a {
-    color: #101055;
-    outline: none;
-}
-
-a:link {
-    text-decoration: #fff;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    color: #121588;
-    text-decoration: none;
-}
-
-a:active {
-    text-decoration: none;
-}
+/* ************************* Section Experience ************************* */
 
 .timeline {
     list-style: none;
@@ -128,7 +274,7 @@ a:active {
 }
 
 .timeline > li > .timeline-panel {
-    width: 46%;
+    width: 42%;
     float: left;
     border: 1px solid #d4d4d4;
     border-radius: 8px;
@@ -209,7 +355,7 @@ a:active {
     }
 
     ul.timeline > li > .timeline-panel {
-        width: calc(100% - 90px);
+        width: calc(100% - 130px);
         width: -moz-calc(100% - 90px);
         width: -webkit-calc(100% - 90px);
     }
@@ -241,6 +387,9 @@ a:active {
 }
 
 .timeline-title {
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.25rem;
     color: inherit;
@@ -265,10 +414,124 @@ a:active {
     margin-top: 5px;
 }
 
+@media (min-width: 576px) {
+    .collapsemodule {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .collapsemodule {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .collapsemodule {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .collapsemodule {
+        max-width: 1140px;
+    }
+}
+
+.collapsemodule {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.collapsebutton {
+    color: #6c757d !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.experience-button {
+    justify-content: center;
+    display: flex;
+}
+
+/* ************************* Section Skills ************************* */
+
+.skills-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.skill {
+    flex-basis: 20%;
+    padding: 30px 15px 30px 10px;
+}
+
+.skill-header {
+    text-align: center;
+}
+
+.stepper {
+    display: flex;
+}
+
+.cell {
+    background-color: #d8d5d0;
+    height: 16px;
+    max-width: 55px;
+    width: 16.66%;
+    min-width: 35px;
+    line-height: 16px;
+    border-right: 3px solid #fff;
+    margin: 2.99999px 0 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.cell.active {
+    background-color: #017df5;
+}
+
+.cell.first {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.cell.last {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.cell > span {
+    opacity: 0;
+}
+
+/* ************************* Section Footer ************************* */
+
 .page-footer {
     background: rgb(136, 138, 140);
     background: linear-gradient(0deg, rgba(136, 138, 140, 1) 0%, rgba(238, 238, 238, 1) 93%);
     margin-bottom: 0px;
+}
+
+.title-footer {
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
 }
 
 .btn-footer {
@@ -291,69 +554,6 @@ a:active {
     text-align: center;
 }
 
-.ng-binding {
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-.skill {
-    padding: 30px 15px 30px 10px;
-}
-
-.skill-header {
+.footer-copyright {
     text-align: center;
-}
-
-.stepper .cell.active {
-    background-color: #017df5;
-}
-
-.stepper .cell.first {
-    border-top-left-radius: 16.00001px;
-    border-bottom-left-radius: 16.00001px;
-}
-
-.stepper .cell.last {
-    border-top-right-radius: 16.00001px;
-    border-bottom-right-radius: 16.00001px;
-}
-
-.stepper .cell {
-    background-color: #d8d5d0;
-    height: 16.00001px;
-    line-height: 16.00001px;
-    border-right: 3px solid #fff;
-    margin: 2.99999px 0 0;
-    text-align: center;
-    font-size: 0.8em;
-    color: #fff;
-}
-
-.collapsemodule {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.collapsemodule #collapseTimeline.collapse:not(.show) {
-    display: block;
-    overflow: hidden;
-}
-
-.collapsemodule #collapseTimeline.collapsing {
-}
-
-.collapsebutton {
-    justify-content: center;
-    display: flex;
-    color: #6c757d !important;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.collapsebutton.collapsed::after {
-    content: 'Mostrar Más...';
-}
-
-.collapsebutton:not(.collapsed)::after {
-    content: 'Mostrar Menos...';
 }
